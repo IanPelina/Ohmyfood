@@ -1,0 +1,245 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main-color: #9356DC;
+    --secondary-color: #FF79DA;
+    --tertiary-color: #99E2D0;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0 0 0 15px;
+}
+
+header .header__logo {
+    width: 50%;
+    padding: 14px 0 5px 0;
+    margin-left: -25px;
+}
+
+.location { 
+    box-shadow: inset 0px 7px 9px -10px rgba(0,0,0,0.75);
+    background-color: #EAEAEA;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.location p {
+    color: #353535;
+    font-weight: 500;
+    margin-left: 17px;
+}
+
+.reservation {
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reservation h1 {
+    text-align: center;
+    padding: 40px 0 15px 0;
+    margin: 0;
+}
+
+.reservation p {
+    text-align: center;
+    margin: 0 0 27px 0;
+    font-weight: 300;
+    font-size: 1.12rem;
+    color: #353535;
+}
+
+.reservation .reservation__button {
+    background: linear-gradient(#FF79DA, #9356DC); /*********ajuster pourçentage etc************/
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 13px 18.75px;
+    margin-bottom: 57px;
+}
+
+.fonctionnement h1 {
+    margin: 48px 0 26px 20px;
+}
+
+.fonctionnement .fonctionnement__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 43px;
+}
+
+.fonctionnement__buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 72.38px;
+    margin-bottom: 25px;
+    background-color: #F7F7F7;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.fonctionnement__buttons p {
+    margin: 0;
+    margin-left: -60px;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 100%;
+    padding: 5px 10px;
+}
+
+.fonctionnement__buttons i {
+    padding-left: 12px;
+    padding-right: 25px;
+    color: #7E7E7E;
+}
+
+.fonctionnement__buttons b {
+    padding-right: 20px;
+}
+
+.composez i {
+    padding-right: 22px;
+}
+
+.composez b {
+    padding-right: 38px;
+}
+
+.degustez i {
+    color: #9356DC;
+    padding-right: 20px;
+}
+
+.degustez b {
+    padding-right: 32px;
+}
+
+.restaurants {
+    background-color: #F7F7F7;
+}
+
+.restaurants h1 {
+    padding: 54px 0 20px 20px;
+    margin: 0;
+}
+
+.restaurants__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 66px;
+}
+
+.restaurants__cards a {
+    text-decoration: none;
+    color: #000000;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.restaurants__cards .restaurants__card {
+    width: 100%;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.restaurants__card img {
+    object-fit: cover;
+    width: 100%;
+    height: 174px;
+    border-radius: 15px 15px 0 0;
+}
+/**************TEST BOUTON NOUVEAU****************
+.restaurants__card .img-new {
+    z-index: 1;
+}
+
+.restaurants__card .new {
+    padding: -100px -100px 0 0;
+    z-index: 2;
+}
+
+.restaurants__card .new-title {
+    color: #008766;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 6.5px 9.5px;
+    background-color: #99E2D0;
+    width: 18%;
+    border-radius: 2px;
+}
+***************************************************/
+.restaurants__card .carte-titre {
+    padding: 12px 0 5px 13px;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.restaurants__card p {
+    margin: 0;
+    padding: 0 0 12px 13px;
+}
+
+.titre-coeur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titre-coeur i {
+    padding: 20px 25px 0 0;
+    font-size: 1.3rem;
+}
+
+footer {
+    height: 186px;
+    background-color: #353535;
+}
+
+footer img {
+    height: 27px;
+    width: 37%;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    padding: 22px 0 0 25px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding:12px 0 0 22px;
+    margin: 0;
+}
+
+footer i {
+    padding-right: 11px;
+}
+
+footer ul li {
+    padding-bottom: 7px;
+    color: white;
+}
