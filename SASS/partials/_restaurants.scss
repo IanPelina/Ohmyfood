@@ -36,14 +36,15 @@
     height: 174px;
     border-radius: 15px 15px 0 0;
 }
-/**************TEST BOUTON NOUVEAU****************
+
 .restaurants__card .img-new {
-    z-index: 1;
+    position: relative;
 }
 
 .restaurants__card .new {
-    padding: -100px -100px 0 0;
-    z-index: 2;
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }
 
 .restaurants__card .new-title {
@@ -52,10 +53,10 @@
     margin: 0;
     padding: 6.5px 9.5px;
     background-color: #99E2D0;
-    width: 18%;
+    /*width: 18%;*/
     border-radius: 2px;
 }
-***************************************************/
+
 .restaurants__card .carte-titre {
     padding: 12px 0 5px 13px;
     font-size: 1.1rem;

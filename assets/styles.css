@@ -3,13 +3,11 @@ header {
   display: flex;
   text-align: center;
   align-items: center;
-  margin: 0 0 0 15px;
+  justify-content: center;
 }
-
 header .header__logo {
   width: 50%;
   padding: 14px 0 5px 0;
-  margin-left: -25px;
 }
 
 .location {
@@ -20,7 +18,6 @@ header .header__logo {
   align-items: center;
   justify-content: center;
 }
-
 .location p {
   color: #353535;
   font-weight: 500;
@@ -33,13 +30,11 @@ header .header__logo {
   flex-direction: column;
   align-items: center;
 }
-
 .reservation h1 {
   text-align: center;
   padding: 40px 0 15px 0;
   margin: 0;
 }
-
 .reservation p {
   text-align: center;
   margin: 0 0 27px 0;
@@ -47,8 +42,7 @@ header .header__logo {
   font-size: 1.12rem;
   color: #353535;
 }
-
-.reservation .reservation__button {
+.reservation__button {
   background: linear-gradient(#FF79DA, #9356DC); /*********ajuster pourçentage etc************/
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   color: white;
@@ -85,11 +79,13 @@ header .header__logo {
   font-weight: 500;
   font-size: 1rem;
   padding: 0;
+  position: relative;
 }
 
 .fonctionnement__buttons p {
+  position: absolute;
+  left: -15px;
   margin: 0;
-  margin-left: -60px;
   background-color: #9356DC;
   color: white;
   border-radius: 100%;
@@ -162,26 +158,26 @@ header .header__logo {
   border-radius: 15px 15px 0 0;
 }
 
-/**************TEST BOUTON NOUVEAU****************
 .restaurants__card .img-new {
-    z-index: 1;
+  position: relative;
 }
 
 .restaurants__card .new {
-    padding: -100px -100px 0 0;
-    z-index: 2;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 .restaurants__card .new-title {
-    color: #008766;
-    font-size: 0.9rem;
-    margin: 0;
-    padding: 6.5px 9.5px;
-    background-color: #99E2D0;
-    width: 18%;
-    border-radius: 2px;
+  color: #008766;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 6.5px 9.5px;
+  background-color: #99E2D0;
+  /*width: 18%;*/
+  border-radius: 2px;
 }
-***************************************************/
+
 .restaurants__card .carte-titre {
   padding: 12px 0 5px 13px;
   font-size: 1.1rem;
@@ -211,7 +207,7 @@ footer {
 
 footer img {
   height: 27px;
-  width: 37%;
+  width: 163.81px;
   filter: invert(100%);
   padding: 22px 0 0 25px;
 }
