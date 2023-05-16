@@ -57,7 +57,7 @@ header .header__logo {
   color: #353535;
 }
 .reservation__button {
-  background: linear-gradient(#FF79DA, #9356DC); /*********ajuster pourçentage etc************/
+  background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   color: white;
   border: none;
@@ -85,8 +85,7 @@ header .header__logo {
   align-items: center;
   padding-bottom: 43px;
 }
-
-.fonctionnement__buttons button {
+.fonctionnement .fonctionnement__buttons button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,24 +101,21 @@ header .header__logo {
   padding: 0;
   position: relative;
 }
-
-.fonctionnement__buttons p {
+.fonctionnement .fonctionnement__buttons p {
   position: absolute;
   left: -15px;
   margin: 0;
-  background-color: #9356DC;
+  background-color: var(--main-color);
   color: white;
   border-radius: 100%;
   padding: 5px 10px;
 }
-
-.fonctionnement__buttons i {
+.fonctionnement .fonctionnement__buttons i {
   padding-left: 12px;
   padding-right: 25px;
   color: #7E7E7E;
 }
-
-.fonctionnement__buttons b {
+.fonctionnement .fonctionnement__buttons b {
   padding-right: 20px;
 }
 
@@ -132,7 +128,7 @@ header .header__logo {
 }
 
 .degustez i {
-  color: #9356DC;
+  color: var(--main-color);
   padding-right: 20px;
 }
 
@@ -186,7 +182,7 @@ header .header__logo {
   font-size: 0.9rem;
   margin: 0;
   padding: 6.5px 9.5px;
-  background-color: #99E2D0;
+  background-color: var(--tertiary-color);
   border-radius: 2px;
 }
 .restaurants__cards__article .carte-titre {
@@ -204,39 +200,48 @@ header .header__logo {
   flex-direction: row;
   justify-content: space-between;
 }
+.titre-coeur .fa-solid {
+  display: none;
+}
 .titre-coeur i {
   padding: 20px 25px 0 0;
   font-size: 1.3rem;
 }
-.titre-coeur i:hover {
-  background: linear-gradient(#FF79DA, #9356DC);
+.titre-coeur:hover .fa-sharp {
+  display: none;
+}
+.titre-coeur:hover .fa-solid {
+  display: block;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text; /*********************************test************************/
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
   height: 186px;
   background-color: #353535;
 }
-
 footer img {
   height: 27px;
   width: 163.81px;
   filter: invert(100%);
   padding: 22px 0 0 25px;
 }
-
 footer ul {
   list-style-type: none;
   padding: 12px 0 0 22px;
   margin: 0;
 }
-
-footer i {
-  padding-right: 11px;
-}
-
 footer ul li {
   padding-bottom: 7px;
+}
+footer ul li a {
+  text-decoration: none;
   color: white;
+}
+footer i {
+  padding-right: 11px;
 }
 
 /*# sourceMappingURL=styles.css.map */

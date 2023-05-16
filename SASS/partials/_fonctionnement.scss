@@ -7,43 +7,39 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 43px;
-}
-
-.fonctionnement__buttons button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 85%;
-    height: 72.38px;
-    margin-bottom: 25px;
-    background-color: #F7F7F7;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    font-weight: 500;
-    font-size: 1rem;
-    padding: 0;
-    position: relative;
-}
-
-.fonctionnement__buttons p {
-    position: absolute;
-    left: -15px;
-    margin: 0;
-    background-color: #9356DC;
-    color: white;
-    border-radius: 100%;
-    padding: 5px 10px;
-}
-
-.fonctionnement__buttons i {
-    padding-left: 12px;
-    padding-right: 25px;
-    color: #7E7E7E;
-}
-
-.fonctionnement__buttons b {
-    padding-right: 20px;
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        height: 72.38px;
+        margin-bottom: 25px;
+        background-color: #F7F7F7;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        font-weight: 500;
+        font-size: 1rem;
+        padding: 0;
+        position: relative;
+    }
+    p {
+        position: absolute; 
+        left: -15px;
+        margin: 0;
+        background-color: var(--main-color);
+        color: white;
+        border-radius: 100%;
+        padding: 5px 10px;
+    }
+    i {
+        padding-left: 12px;
+        padding-right: 25px;
+        color: #7E7E7E;
+    }
+    b {
+        padding-right: 20px;
+    }
 }
 
 .composez i {
@@ -55,7 +51,7 @@
 }
 
 .degustez i {
-    color: #9356DC;
+    color: var(--main-color);
     padding-right: 20px;
 }
 
