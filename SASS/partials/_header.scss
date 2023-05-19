@@ -8,3 +8,9 @@ header {
         padding: 14px 0 5px 0;
     }
 }
+
+@media (min-width: 850px) {
+    header .header__logo {
+        padding: 30px 0 30px 0;
+    }
+}
