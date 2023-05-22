@@ -42,26 +42,26 @@
     }
 }
 
-.composez i {
+#composez i {
     padding-right: 22px;
 }
 
-.composez b {
+#composez b {
     padding-right: 38px;
 }
 
-.degustez i {
+#degustez i {
     color: var(--main-color);
     padding-right: 20px;
 }
 
-.degustez b {
+#degustez b {
     padding-right: 32px;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1024px) {
     .fonctionnement {
-        margin-left: 10%;
+        padding: 0 10% 0 13%;
     }
     .fonctionnement h1 {
         margin-left: 0;
@@ -69,9 +69,19 @@
     .fonctionnement .fonctionnement__buttons {
         flex-direction: row;
         gap: 34px;
-        justify-content:flex-start;
+       /* justify-content: center;*/
     }
     .fonctionnement .fonctionnement__buttons button {
         max-width: 322.49px;
+    }
+    .fonctionnement .fonctionnement__buttons button i {
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+    .fonctionnement__buttons #choisissez b {
+        padding-right: 10px;
+    }
+    .fonctionnement__buttons #choisissez i {
+        padding-right: 20px;
     }
 }
