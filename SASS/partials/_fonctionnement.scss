@@ -1,12 +1,25 @@
-.fonctionnement h1 {
+.fonctionnement {
+    h1 {
     margin: 48px 0 26px 20px;
-}
-
-.fonctionnement .fonctionnement__buttons {
+    }
+    &__buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 43px;
+    #composez i {
+        padding-right: 22px;
+    }
+    #composez b {
+        padding-right: 38px;
+    }
+    #degustez i {
+        color: var(--main-color);
+        padding-right: 20px;
+    }
+    #degustez b {
+        padding-right: 32px;
+    }
     button {
         display: flex;
         justify-content: center;
@@ -22,7 +35,7 @@
         font-size: 1rem;
         padding: 0;
         position: relative;
-    }
+        }
     p {
         position: absolute; 
         left: -15px;
@@ -31,57 +44,40 @@
         color: white;
         border-radius: 100%;
         padding: 5px 10px;
-    }
+        }
     i {
         padding-left: 12px;
         padding-right: 25px;
         color: #7E7E7E;
-    }
+        }
     b {
         padding-right: 20px;
+        }
     }
-}
-
-#composez i {
-    padding-right: 22px;
-}
-
-#composez b {
-    padding-right: 38px;
-}
-
-#degustez i {
-    color: var(--main-color);
-    padding-right: 20px;
-}
-
-#degustez b {
-    padding-right: 32px;
 }
 
 @media (min-width: 1024px) {
     .fonctionnement {
         padding: 0 10% 0 13%;
-    }
-    .fonctionnement h1 {
-        margin-left: 0;
-    }
-    .fonctionnement .fonctionnement__buttons {
-        flex-direction: row;
-        gap: 34px;
-       /* justify-content: center;*/
-    }
-    .fonctionnement .fonctionnement__buttons button {
-        max-width: 322.49px;
-    }
-    .fonctionnement .fonctionnement__buttons button i {
-        padding-left: 20px;
-        padding-right: 5px;
-    }
-    .fonctionnement__buttons #choisissez b {
-        padding-right: 10px;
-    }
-    .fonctionnement__buttons #choisissez i {
-        padding-right: 20px;
+        h1 {
+            margin-left: 0;
+        }
+        &__buttons {
+            flex-direction: row;
+            gap: 34px;
+            button {
+                max-width: 322.49px;
+            }
+            button i {
+                padding-left: 20px;
+                padding-right: 5px;
+            }
+            #choisissez b {
+                padding-right: 10px;
+            }
+            #choisissez i {
+                padding-right: 20px;
+            }
+        }
     }
 }

@@ -4,7 +4,9 @@
     align-items: center;
     justify-content: center;
     i {
-    padding-left: 23px;
+        position: absolute;
+        top: 24px;
+        left: 23px;
     }
     &__logo {
         width: 50%;
@@ -16,7 +18,7 @@
     }
 }
 
-.en__tete {
+.menu {
     background-color: white;
     img {
     position: relative;
@@ -24,7 +26,22 @@
     width: 100%;
     height: 275px;
     }
-    &__titre {
+    h1 {
+    font-family: 'Shrikhand';
+    font-size: 1.7rem;
+    margin: 32px 17px 0;
+    }
+    i {
+    font-size: 1.3rem;
+    margin: 35px 41px 0 0; 
+    }
+    &__form {
+        margin-top: -30px;
+        border-radius: 30px 30px 0 0;
+        background-color: #F6F6F6;
+        width: 100%;
+    }
+    &__title {
         width: 100%;
         border-radius: 30px 30px 0 0;
         background-color: #F6F6F6;
@@ -34,90 +51,165 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        .gout__title {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 256px;
+        }
+        .enchantée__title {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 260px;
+        }
+        .sens__title {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 246px;
+        }
     }
-    h1 {
-        font-family: 'Shrikhand';
-        font-size: 1.7rem;
-        margin: 32px 17px 0; 
-    }
-    i {
-        font-size: 1.3rem;
-        margin: 35px 41px 0 0; 
+    &__cards {
+        background-color: #F6F6F6;
+        margin-top: 35px;
+        padding-top: 42px;
+        &__pb {
+            margin-bottom: 40px;
+        }
+        &__title .title {
+            padding-top: 42px;
+        }
+        p {
+            margin: 0;
+            padding: 5px 0 0 13px;
+            font-weight: 300;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        hr {
+            background-color: #99E2D0;
+            height: 3px;
+            width: 40px;
+            margin: 7px 0 0 13px;
+            border: 0;
+        }
+        &__content {
+            margin: 0 auto;
+            width: 95%;
+            border-radius: 15px;
+            box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+            transition: transform 1s ease-in-out;
+            position: relative;
+            h2 {
+                font-size: 1.1rem;
+                padding: 12px 0 0 15px ;
+                margin-bottom: 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                width: 80%;
+            }
+            &:hover .fa-sharp {
+                opacity: 1;
+                animation: slide 1s ease-in-out;
+            }
+            &:hover h3 {
+                animation: paddright 1s ease-in-out both;
+            }
+        }
+        &__between {
+            padding-bottom: 13px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .valid-case {
+                display: flex;
+                flex-direction: row;
+                h3 {
+                    margin: 0;
+                    padding-right: 13px;
+                    color: #353535;
+                    font-size: 1rem;
+                }
+                i {
+                    margin: 0;
+                    opacity: 0;
+                    color: white;
+                    background-color: #99E2D0;
+                    width: 59px;
+                    height: 70.8px;
+                    border-radius: 0 15px 15px 0;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            
+        }
+        &__button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            button {
+                margin-bottom: 40px;
+            }
+        }
     }
 }
 
-.epd {
-    background-color: #F6F6F6;
-    margin-top: 35px;
-    padding-top: 42px;
-    &__pb {
-        margin-bottom: 40px;
+//cache le contenu effet non voulu , à corriger
+@keyframes paddright {
+    0% {
+        transform: translateX(0);
     }
-    p {
-        margin: 0;
-        padding: 5px 0 0 13px;
-        font-weight: 300;
+    100% {
+        transform: translateX(-55px);
     }
-    hr {
-        background-color: #99E2D0;
-        height: 3px;
-        width: 40px;
-        margin: 7px 0 0 13px;
-        border: 0;
+}
+//ne demarre pas de l'endroit souhaité , à corriger 
+@keyframes slide {
+    0% { 
+        transform: translateX(50px);
+        opacity: 0;
     }
-    &__content {
-        margin: 0 auto;
-        width: 95%;
-        border-radius: 15px;
-        box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-        h2 {
-            font-size: 1.1rem;
-            padding: 12px 0 0 15px ;
-            margin-bottom: 0;
-        }
-    }
-    &__between {
-        padding-bottom: 13px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        h3 {
-            margin: 0;
-            padding-right: 13px;
-            color: #353535;
-            font-size: 1rem;
-        }
-    }
-    &__button {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        button {
-            margin-bottom: 40px;
-        }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
 @media (min-width: 1024px) {
-    .menu__header i {
+    .menu__header {
+    i {
         position: absolute;
         top: 40px;
         left: 23px;
         font-size: 1.2rem;
     }
-    .menu__header__logo {
+    &__logo {
         padding: 30px 0 30px 0;
     }
-    .en__tete__titre {
+    }
+    .menu {
+    &__form {
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
-        justify-content: center;
     }
-    .en__tete__titre h1 {
+    &__title {
+        width: 80%;
+        justify-content: center;
+        align-items: baseline;
+    }
+    &__title h1 {
         margin-top: 50px;
     }
-    .epd {
+    &__cards {
         padding-top: 72px;
         margin-left: 10%;
         margin-right: 10%;
@@ -125,27 +217,29 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        &__pb {
+            width: 72%;
+            }
     }
-    .epd__pb {
-        width: 60%;
     }
+    
     footer {
         height: 114px;
         display: flex;
         flex-direction: row-reverse;
-    }
-    footer img {
-        padding: 53px 25px 30px 22px;
-    }
-    ul {
-        display: flex;
-        flex-direction: row;
-        font-weight: 400;
-    }
-    ul li {
-        padding: 45px 15px 0 0;
-    }
-    .space {
-        padding-right: 40px;
+        img {
+            padding: 53px 25px 30px 22px;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            font-weight: 400;
+            li {
+                padding: 45px 15px 0 0;
+            }
+            .space {
+                padding-right: 40px;
+            } 
+        }
     }
 }

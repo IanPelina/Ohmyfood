@@ -23,7 +23,33 @@
             background-color: white;
             border-radius: 20px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-            .img-new {
+            .title-and-heart { 
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                position: relative;
+                i {
+                    position: absolute;
+                    top: 20px;
+                    right: 25px;
+                    font-size: 1.3rem;
+                }
+                .fa-solid {
+                    opacity: 0;
+                }
+                .heart:hover .fa-sharp {
+                    animation: hideheart 1.5s  ease-in-out both;
+                    opacity: 0;
+                }
+                .heart:hover .fa-solid {
+                    animation: blockheart 1.5s ease-in-out both;
+                    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+                    -webkit-background-clip: text;
+                    background-clip: white;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            .new-case {
                 position: relative;
             }
             img {
@@ -45,7 +71,7 @@
                     border-radius: 2px;
                 }
             }
-            .carte-titre {
+            .card-title {
                 padding: 12px 0 5px 13px;
                 font-size: 1.1rem;
                 margin: 0;
@@ -58,44 +84,40 @@
     }
 }
 
-.titre-coeur {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    .fa-solid {
-        display: none;
+@keyframes blockheart {
+    0% {
+        opacity: 0;
     }
-    i {
-        padding: 20px 25px 0 0;
-        font-size: 1.3rem;
-        }
-        &:hover .fa-sharp {
-            display: none;
-        }
-        &:hover .fa-solid {
-            display: block;
-            background: -webkit-linear-gradient(#9356DC, #FF79DA);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; /**********************changer pour animation***************/
-        }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hideheart {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @media (min-width: 1024px) {
     .restaurants {
         padding: 0 10% 0 13%;
-    }
-    .restaurants h1 {
-        padding: 54px 0 28px 0;
-    }
-    .restaurants__cards {
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 90px;
-        row-gap: 50px;
-        padding-bottom: 30px;
-    }
-    .restaurants__cards a {
-        max-width: 490px;
-        width: 44.2%;
+        h1 {
+            padding: 54px 0 28px 0;
+        }
+        &__cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 90px;
+            row-gap: 50px;
+            padding-bottom: 30px;
+            a {
+                max-width: 490px;
+                width: 44.2%;
+            }
+        }
     }
 }

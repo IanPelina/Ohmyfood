@@ -18,7 +18,7 @@
         width: 90%;
     }
     &__button {
-        background: linear-gradient(#FF79DA, #9356DC); /*********ajuster pourçentage etc************/
+        background: linear-gradient(#FF79DA, #9356DC);
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
         color: white;
         border: none;
@@ -27,10 +27,10 @@
         font-weight: 500;
         padding: 13px 18.75px;
         margin-bottom: 57px;
+        transition: 0.4s ease-in-out;
     }
     &__button:hover {
         opacity: 0.8;
-        transition: 0.4s ease-in-out;
         transform: scale(1.01);
         cursor: pointer;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);
