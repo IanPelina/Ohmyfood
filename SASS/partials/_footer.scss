@@ -1,24 +1,29 @@
 footer {
     height: 186px;
     background-color: #353535;
+
     img {
         height: 27px;
         width: 163.81px;
         filter: invert(100%);
         padding: 22px 0 0 25px;
     }
+
     ul {
         list-style-type: none;
-        padding:12px 0 0 22px;
+        padding: 12px 0 0 22px;
         margin: 0;
     }
+
     ul li {
         padding-bottom: 7px;
     }
+
     ul li a {
         text-decoration: none;
         color: white;
     }
+
     i {
         padding-right: 11px;
     }

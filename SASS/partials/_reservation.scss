@@ -3,12 +3,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     h1 {
         text-align: center;
         padding: 40px 0 15px 0;
         margin: 0;
         width: 70%;
     }
+
     p {
         text-align: center;
         margin: 0 0 27px 0;
@@ -17,6 +19,7 @@
         color: #353535;
         width: 90%;
     }
+
     &__button {
         background: linear-gradient(#FF79DA, #9356DC);
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -29,6 +32,7 @@
         margin-bottom: 57px;
         transition: 0.4s ease-in-out;
     }
+
     &__button:hover {
         opacity: 0.8;
         transform: scale(1.01);

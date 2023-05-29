@@ -10,6 +10,7 @@
     background-color: #f6f6f6;
     z-index: 2;
     animation: hideloader 3s both;
+
     .loader {
         display: flex;
         justify-content: center;
@@ -17,45 +18,55 @@
         font-size: 3.5rem;
         animation: loader infinite 0.3s alternate;
     }
+
     .o {
         animation-delay: 0.01s;
     }
-    
-    .h{
+
+    .h {
         animation-delay: 0.02s;
     }
-    
+
     .m {
         animation-delay: 0.03s;
     }
-     
+
     .y {
         animation-delay: 0.04s;
     }
-    
+
     .f {
         animation-delay: 0.05s;
     }
-    
+
     .o1 {
         animation-delay: 0.06s;
     }
-    
+
     .o2 {
         animation-delay: 0.07s;
     }
-    
+
     .d {
         animation-delay: 0.08s;
     }
 }
+
 //voir si ok 
 @keyframes hideloader {
-    0% { opacity: 1; visibility: visible;}
-    100% { opacity: 0; visibility: hidden;}
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 @keyframes loader {
-    100% {  transform: translateY(-30px);
+    100% {
+        transform: translateY(-30px);
     }
 }
