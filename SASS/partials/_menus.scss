@@ -90,6 +90,16 @@
 
         &__pb {
             margin-bottom: 40px;
+            animation: menuslide 1.5s ease-in-out both; //test animation
+        }
+
+        .pb2 {
+            animation: menuslideright 1.5s ease-in-out both;
+            animation-delay: 0.5s;
+        }
+
+        .pb3 {
+            animation-delay: 1s;
         }
 
         &__title .title {
@@ -133,11 +143,11 @@
 
             &:hover .fa-sharp {
                 opacity: 1;
-                animation: slide 1s ease-in-out;
+                animation: slide 0.5s ease-in-out;
             }
 
             &:hover h3 {
-                animation: paddright 1s ease-in-out both;
+                animation: paddright 0.5s ease-in-out both;
             }
         }
 
@@ -188,8 +198,32 @@
         }
     }
 }
+//ANIMATIONS APPARITION MENUS
+@keyframes menuslide {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
 
-//cache le contenu effet non voulu , à corriger
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes menuslideright {
+    0% { 
+        opacity: 0;
+        transform: translateX(200px);
+    }    
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+//ANIMATION VALIDATION MENUS
+//cache le contenu à 320px, à corriger
 @keyframes paddright {
     0% {
         transform: translateX(0);
@@ -203,12 +237,10 @@
 //ne demarre pas de l'endroit souhaité , à corriger 
 @keyframes slide {
     0% {
-        transform: translateX(50px);
         opacity: 0;
     }
 
     100% {
-        transform: translateX(0);
         opacity: 1;
     }
 }
