@@ -41,21 +41,25 @@
                     font-size: 1.3rem;
                 }
 
-                .fa-solid {
-                    opacity: 0;
+                .fa-sharp::before {
+                    transition: all 1s ease-in-out;
                 }
 
-                .heart:hover .fa-sharp {
-                    animation: hideheart 1.5s ease-in-out both;
+                .fa-solid::before{
                     opacity: 0;
-                }
-
-                .heart:hover .fa-solid {
-                    animation: blockheart 1.5s ease-in-out both;
                     background: -webkit-linear-gradient(#9356DC, #FF79DA);
                     -webkit-background-clip: text;
-                    background-clip: white;
+                    background-clip: text;
                     -webkit-text-fill-color: transparent;
+                    transition: all 1s ease-in-out;
+                }
+
+                .heart:hover .fa-sharp::before {
+                    opacity: 0;
+                }
+
+                .heart:hover .fa-solid::before {
+                    opacity: 1;
                 }
             }
 
@@ -96,26 +100,6 @@
                 padding: 0 0 12px 13px;
             }
         }
-    }
-}
-
-@keyframes blockheart {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes hideheart {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
     }
 }
 
