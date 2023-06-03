@@ -30,9 +30,9 @@
         object-fit: cover;
         width: 100%;
         height: 275px;
-        @media (min-width: 1441px) {
+        /*@media (min-width: 1441px) {
             border-radius:15px 15px 0 0;
-        }
+        }*/
     }
 
     h1 {
@@ -49,35 +49,36 @@
         .heart-menu {
             width: 21px;
             position: relative;
-            margin-right: 5%;
+            margin-right: 40px;
+            display: flex;
 
             i {
                 font-size: 1.3rem;
                 margin: 35px 5% 0 0;
             }
 
-            .fa-solid {
+            .fa-solid::before {
             position: absolute;
             bottom: 0;
             opacity: 0;
             transition: all 1.5s ease-in-out;
             cursor: pointer;
+            background: -webkit-linear-gradient(#9356DC, #FF79DA);
+            -webkit-background-clip: text;
+            background-clip: white;
+            -webkit-text-fill-color: transparent;
             }
             
-            .fa-sharp {
+            .fa-sharp::before {
                 transition: all 1.5s ease-in-out;
                 cursor: pointer;
             }
             
-            &:hover .fa-solid {
+            &:hover .fa-solid::before {
                 opacity: 1;
-                background: -webkit-linear-gradient(#9356DC, #FF79DA);
-                -webkit-background-clip: text;
-                background-clip: white;
-                -webkit-text-fill-color: transparent;
             }
             
-            &:hover .fa-sharp {
+            &:hover .fa-sharp::before {
                 opacity: 0;
             }
             
@@ -352,9 +353,9 @@
         height: 114px;
         display: flex;
         flex-direction: row-reverse;
-        @media (min-width: 1441px) {
+        /*@media (min-width: 1441px) {
             box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-        }
+        }*/
 
         img {
             padding: 53px 25px 30px 22px;
