@@ -649,14 +649,11 @@ footer i {
   }
   .menu__form {
     width: 74%;
-    margin-left: 10%;
-    margin-right: 10%;
   }
   .menu__title {
     width: 74%;
     justify-content: center;
     align-items: baseline;
-    max-width: 1065.6px;
     margin-top: 0;
   }
   .menu__title h1 {
