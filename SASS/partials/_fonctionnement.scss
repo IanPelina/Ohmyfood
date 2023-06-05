@@ -3,7 +3,7 @@
         margin: 48px 0 26px 20px;
     }
 
-    &__buttons {
+    &__steps {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -26,7 +26,7 @@
             padding-right: 32px;
         }
 
-        button {
+        .step {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -43,7 +43,7 @@
             position: relative;
         }
 
-        p {
+        .number {
             position: absolute;
             left: -15px;
             margin: 0;
@@ -73,16 +73,16 @@
             margin-left: 0;
         }
 
-        &__buttons {
+        &__steps {
             flex-direction: row;
             gap: 34px;
 
-            button {
+            .step {
                 //max-width: 322.49px;
                 width: 29%;
             }
 
-            button i {
+            .step i {
                 padding-left: 20px;
                 padding-right: 5px;
             }
