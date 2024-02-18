@@ -1,5 +1,4 @@
 # Ohmyfood
-## 4ème projet de la formation
 
 ![image](https://assets-global.website-files.com/653a5b42c47238f54d01094c/655df8822912622e1af0e11b_Ohmyfood%20-%20Desktop%20Huge.png)
 
