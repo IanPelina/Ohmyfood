@@ -1,8 +1,15 @@
 # Ohmyfood
+## 4ème projet de la formation
 
-4ème projet de la formation
+![image](https://assets-global.website-files.com/653a5b42c47238f54d01094c/655df8822912622e1af0e11b_Ohmyfood%20-%20Desktop%20Huge.png)
 
-Mission: Améliorez l'interface d'un site mobile avec des animations CSS.
+## Contexte
+Vous avez intégré Ohmyfood en tant que développeur junior. Il s’agit d’une jeune startup qui voudrait s'imposer sur le marché de la restauration.<br>
+Déjà présente à New-York, elle souhaite se faire sa place à Paris.<br>
+Votre mission est de développer un site “mobile first”
+
+## Mission: 
+Améliorez l'interface d'un site mobile avec des animations CSS.
 
 <h2>Étapes du projet:</h2>
 
