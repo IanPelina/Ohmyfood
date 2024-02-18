@@ -4,7 +4,7 @@
 
 Mission: Améliorez l'interface d'un site mobile avec des animations CSS.
 
-<h2>Étapess du projet:</h2>
+<h2>Étapes du projet:</h2>
 
 - Mettre en place notre environnement de développement
 - Intégrer la version mobile de la page d’accueil
